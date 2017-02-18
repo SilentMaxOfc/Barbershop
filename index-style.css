@@ -1,0 +1,553 @@
+/*Общее */
+/*Header*/
+html, body{
+    padding:0;
+    margin:0;
+    font-family:PT Sans Narrow, sans-serif;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.header{
+    padding:0;
+    background:;
+}
+.header .layout-center-wrapper{
+    height:72px;
+    background:black;    
+ }
+.top-menu {
+    float:left;
+    margin:0;
+    padding:0;
+    min-height:72px;
+    list-style:none;
+}
+.header li {
+    float:left;  
+}
+.header a {
+    display:block;
+    font-size:16px;
+    text-decoration:none;
+    color:white;
+    line-height:72px;
+    vertical-allign:middle;
+    margin:0px 20px;
+}
+.header li:hover {
+    background-color:#242424;
+}
+.active {
+    box-shadow:inset 0 -5px 0 0px white;
+}
+.account-menu a{
+    float:right;
+    padding:0 20px;
+    padding-left:35px;
+    position:relative;
+    opacity:0.3;
+}
+.account-menu a:hover {
+    background-color:#242424;
+    opacity:1;
+}
+.account-menu a:before {
+    content:'';
+    position:absolute;
+    width:18px;
+    height:16px;
+    left:5px;
+    top:27px;
+    background-image:url("img/enter-ic-active.png");
+    
+}
+/*Body */
+.layout-center-wrapper{
+    width:960px;
+    min-height:50px;
+    margin:0 auto;
+    position: relative;
+}
+.content {
+    padding-top:1px; 
+}
+.btn {
+    color:white !important;
+    background:black;
+    text-decoration:none;
+    font-family:PT Sans Narrow, sans-serif;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:14px;
+    text-align: center;
+    padding:15px 35px;
+    }
+.btn:hover {
+    background:#663d15;
+}
+.content:after {
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.navigator-title-section {
+    margin:60px 0;
+}
+.navigator-title {
+    font-siZe:30px;
+    line-height:42px;
+}
+.navigation a {
+    color:black;
+    text-decoration:none;
+    font-size:14px;
+    line-height:24px;
+    padding-right:13px;
+}
+.navigation .romb {
+    padding-left: 23px;
+    background:url("img/black-romb-ic.png") no-repeat 0 4px;
+}
+/*Footer*/
+.footer{
+    margin-top:64px;
+    padding:0;
+    background:url("img/footer-bg.png");
+    height:189px;
+    box-shadow: inset 0 20px 50px 0 black;
+}
+.footer .layout-center-wrapper:after {
+  content:'';
+  display:table;
+  clear:both;
+}
+.footer .contacts-address, .social-buttons, .copyright {
+    float:left;
+    width: 300px;
+    min-height:50px;
+    margin:45px 10px;
+    color:white;
+    padding-top:15px;
+}
+.footer .copyright {
+    float:right;
+    text-align:right;
+}
+.social-buttons {
+    text-align:center;
+}
+.footer span {
+    margin-bottom:10px;
+    display:block;
+}
+.footer .design {
+    margin-bottom:25px;
+    margin-right:25px;
+}
+.copyright .glukhanko {
+  margin:0;
+}
+.footer .glukhanko   {
+    padding:15px 35px;
+    min-width:140px;
+}
+.footer .btn:hover {
+    background:white;
+    color:black !important;
+}
+/* btn-social:before {
+    content:"";
+    display: inline-block;
+    width:43px;
+    height:43px;
+    position:absolute;
+    background-image:url{"img/vk-ic.png"};
+    background-color:black;
+}
+*/
+/*НАчало первой страницы (главная)*/
+
+.page1 {
+        background:url("img/bg.jpg");
+}
+.page1 .btn {
+    
+    margin-right:20px;
+    min-width:140px;
+}
+.main .active ~ .footer {
+box-shadow: none;
+}
+.logo{
+    width:368px;
+    min-height:204px;
+    margin:54px auto 25px;
+    text-align:center;
+}
+
+.features{
+    margin:50px 0;
+    padding:0;
+    list-style:none;
+}
+.features:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.features li{
+    float:left;
+    width:300px;
+    min-height:50px;
+    margin:0 10px;
+    text-align:center;
+}
+.features li:last-child{
+    margin-right:0;
+}
+.feature-title {
+    font-size:30px;
+    color:white;
+    line-height:42px;
+    padding-bottom:10px;
+}
+.features p {
+    font-size:14px;
+    color:white;
+    line-height:24px;
+}
+.index-section{
+    margin:30px 10px;
+    padding:50px 0;
+    min-height:50px;
+    background:url("img/index-section-bg.png");
+}
+.index-section:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.index-left-column{
+    float:left;
+    width:390px;
+    margin-left:80px;
+    min-height:300px;
+    position:relative;
+    font-weight: bold;
+ }
+.index-news {
+    list-style:none;
+    margin-bottom:50px;
+    width:300px;
+    padding:0;
+}
+.index-left-column:after {
+    content:''; 
+    position:absolute;
+    width:8px;
+    height:250px;
+    right:0;
+    top:0;
+    background-image:url("img/index-sektion-border.png");
+}
+.index-section-title {
+    font-size:30px;
+    line-height:42px;
+    margin-bottom:20px;
+}
+.index-section a {
+    font-size:14px;
+    color:black;
+    text-decoration:none;
+    line-height:24px;
+}
+.date {
+    font-family:georgia;
+    font-size:14px;
+    line-height:24px;
+    font-style:italic;
+    text-transform:none;
+}
+.index-section .index-left-column li {
+    margin-bottom:20px;
+}
+.index-right-column{
+    float:right;
+    width:390px;
+    margin-left:80px;
+    min-height:100px;
+}
+.gallery-item {
+    float:left;
+    margin-bottom:36px;
+}
+.gallery-item:nth-child(2), .gallery-item:nth-child(3) {
+    display:none;
+}
+.gallery-controls {
+    clear:both;
+}
+.contacts-address, .contacts-work-time {
+    font-size:14px;
+    text-transform:uppercase;
+    line-height:24px;
+    margin-bottom:20px;
+}
+.index-left-column .contacts-work-time {
+    margin-bottom:50px;
+  
+}
+.contacts-address p {
+    margin:0;
+}
+fieldset {
+    border: none;
+    margin-left:0;
+    padding-left:0;
+}
+input[type="submit"] {
+    width:330px;
+    }
+.contact-label {
+    width:380px;
+    margin-bottom:10px;
+}
+.contact {
+    width:140px;
+    height:43px;
+    background:url("img/index-section-bg.png");
+    margin-right:20px;
+    color: black;
+    border-color:black;
+    padding-left:10px;
+    font-family:PT Sans Narrow, sans-serif;
+    font-size:14px;
+    text-transform:uppercase;
+    line-height:24px;
+    display:inline-block;
+    font-weight: bold;
+}
+
+/*НАчало второй страницы (текстовая)*/
+
+.page2 {
+        background:url(img/index-section-bg.png);
+        font-size:14px;
+        line-height:24px;
+}
+
+.main-price-title {
+    margin-bottom:25px;
+    padding:20px;
+    font-size:48px;
+    display: inline-block;
+    position: relative;
+    background:url(img/index-section-bg.png);
+    z-index: 10;
+}
+.wrapper-sticker {
+    text-align:center;
+    overflow: hidden;
+}
+.wrapper-sticker:after {
+    content:"";
+    border-bottom: 2px solid black;
+    position: absolute;
+    width:960px;;
+    left:0px;
+    top:240px;
+    z-index: 5;
+}
+.price-brands {
+    padding-left:0px;
+    list-style: none;
+    margin: 30px 0 0 0;
+}
+.price-brands li {
+    padding-left: 23px;
+    background:url("img/black-romb-ic.png") no-repeat 1px 7px;
+    margin: 10px 0;
+}
+.price-section-title {
+    font-size:24px;
+    line-heigth:30px;   
+}
+.prices {
+    width: 460px;
+    height: 125px;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+td {
+    border: 2px solid black;
+    width: 50%;
+    padding-left: 20px;
+}
+.coast {
+    text-align: center;
+}
+.price-left-column p, .price-right-column p {
+    width: 390px;
+}
+.price-left-column, .price-right-column {
+    float:left;
+    width:460px;
+    min-height:150px;
+    margin:10px;
+    vertical-align:top;
+    }
+.price-right-column:last-child {
+    padding-top:25px;
+}
+ 
+/*НАчало третьей страницы (каталог)*/
+
+.page3 {
+    background:url(img/index-section-bg.png);
+    font-size:14px;
+    line-height:24px;
+}
+.left-section-katalog {
+  float:left;
+  width:220px;
+}
+.page3 fieldset, fieldset ul{
+  padding:0;
+  }
+.brands {
+  float:left;
+  width:220px;
+  margin:10px 10px 10px 0;
+  }
+.group-goods {
+  float:left;
+  width:220px;
+  margin:10px 10px 10px 0;
+  }
+.right-section-katalog {
+  float:right;
+  width:720px;
+  text-align:center;
+  }
+.goods-section {
+  display:inline-block;
+  width:220px;
+  vertical-align:top;
+  margin:5px;
+  text-align:left;
+  background:white;
+  }
+
+.clearfix:after {
+  content:'';
+  display:table;
+  clear:both;
+  }
+
+.price {
+  display:inline-block;
+    padding:15px 30px;
+  text-align:center;
+  background:#e5e5e5;
+  margin: 0 -4px 20px 15px;;
+    margin-top: 5px;
+}
+.name {
+  text-transform:none;
+}
+.name, .brand-name {
+  margin:0 16px;
+}
+
+.pages a:first-child {
+  margin-left:257px;
+}
+.pages {
+  clear:both;
+  }
+.page3 .goods-section .btn {
+  display:inline-block;
+  vertical-align:middle; 
+      padding:15px 20px;
+    margin-top: -4px;
+    
+}
+.pages .pages-btn {
+  margin:44px 7px;
+  text-align:center;
+    display:inline-block;
+  vertical-align:middle;
+    padding: 10px 20px;
+}
+.left-section-katalog ul {
+    list-style:none;
+}
+.left-section-katalog li {
+    padding: 5px;
+}
+.page-active {
+    background: white;
+    color:black !important;
+}
+
+/*НАчало четвертой страницы (товар)*/
+.page4 {
+    background:url(img/index-section-bg.png);
+    font-size:14px;
+    line-height:24px;
+}
+.page4 .navigation {
+    margin-left: 10px;
+}
+.photo-section {
+  float:left;
+  width: 480px;
+  min-height:300px;
+  margin-right:10px;
+}
+.photo-section img {
+  margin:10px 9px;
+}
+.opisanie-tovara {
+  float:right;
+  width: 410px;
+  min-height:300px;
+  padding:10px;
+}
+.name-title {
+  font-size:30px;
+  line-height:42px;
+}
+.goods-title {
+  font-size:24px;
+  line-height:42px;
+}
+.articul {
+  padding:0 0 0 200px;
+  color:#aeaeae;
+}
+.opisanie-tovara p {
+  margin:40px 0;
+}
+.page4 ul {
+  padding:0 20px;
+}
+.opisanie-tovara .price {
+    margin-left: 0;
+    padding:12px 30px;
+}
+.photo-section img {
+    box-shadow: 0 0 30px 1px gray;
+}
+.opisanie-tovara ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    margin-top:30px;
+}
+.opisanie-tovara li {
+    padding-left: 23px;
+    background:url("img/black-romb-ic.png") no-repeat 0 8px;
+} 
