@@ -79,9 +79,9 @@ html, body{
     font-family:PT Sans Narrow, sans-serif;
     text-transform:uppercase;
     font-weight:bold;
-    font-size:14px;
+    font-size:1em;
     text-align: center;
-    padding:15px 35px;
+    padding:15px 10%;
     }
 .btn:hover {
     background:#663d15;
@@ -175,7 +175,6 @@ html, body{
 .page1 .btn {
     
     margin-right:20px;
-    min-width:140px;
 }
 .main .active ~ .footer {
 box-shadow: none;
