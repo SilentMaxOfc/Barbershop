@@ -190,6 +190,11 @@ box-shadow: none;
     margin:5% auto 5%;
     text-align: center;
 }
+@media (max-width: 767px) { 
+    .logo{
+        width:100%;
+        margin:0;
+    }
 
 .features{
     margin:5% auto;
