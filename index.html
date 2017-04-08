@@ -23,11 +23,11 @@
             <div class="layout-center-wrapper">
                 <ul class="top-menu">
                     <li class="main"><a class="active" href="#">Главная</a></li>
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Новости</a></li>
+                    <li><a href="#info">Информация</a></li>
+                    <li><a href="#news">Новости</a></li>
                     <li><a href="price.html">Прайс-лист</a></li>
                     <li><a href="katalog.html">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
                 </ul>
                 <div class="account-menu">
                         <a class="account-menu-enter" href="#">Вход</a>
@@ -36,7 +36,7 @@
         </div>
         <div class="layout-center-wrapper content">
             <div class="logo"><a href="#"><img src="img/index-logo.png" alt="logo"></a></div>
-            <ul class="features">
+            <ul class="features" id="info">
                 <li>
                     <div class="feature-title">Быстро</div>
                     <img src="img/romb.png" alt="romb-icon">
@@ -55,7 +55,7 @@
             </ul>
 
             <div class="index-section">
-                <div class="index-left-column">
+                <div class="index-left-column" id="news">
                     <div class="index-section-title">Новости</div>
                     <ul class="index-news">
                         <li>
@@ -69,7 +69,7 @@
                     </ul>
                     <a href="#" class="btn">Все новости</a>
                 </div>
-                <div class="index-right-column">
+                <div class="index-right-column" id="gallery">
                     <div class="index-section-title">Фотогалерея</div>
                     <div class="gallery">
                         <div class="gallery-items">
@@ -86,7 +86,7 @@
             </div>
 
             <div class="index-section">
-                <div class="index-left-column">
+                <div class="index-left-column" id="informarion">
                     <div class="index-section-title">Контактная информация</div>
                     <div class="contacts-address">
                         <p>Barbershop «Borodinski»</p>
@@ -96,10 +96,10 @@
                     <div class="contacts-work-time">
                         <p>Время работы: <br> пн — пт: с 10:00 до 22:00 <br> сб — вс: с 10:00 до 19:00</p>
                     </div>
-                    <a href="#" class="btn">Как проехать</a>
-                    <a href="#" class="btn">Обратная связь</a>
+                    <button class="btn">Как проехать</button>
+                    <button class="btn">Обратная связь</button>
                 </div>
-                <div class="index-right-column">
+                <div class="index-right-column" id="contact" >
                     <div class="index-section-title">Записаться</div>
                     <div class="contact-label"> УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</div>
                     <form action="#" method="post" id="orderForm">
