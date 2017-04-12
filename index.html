@@ -12,30 +12,44 @@
     <title>Barbershop Borodinsky</title>
     <link href="img/mustache.png" rel="icon" type="image/png" sizes="32x32">
     
-    <link rel="stylesheet" type="text/css" href="index-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="index-style.css">
+        
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
-    
     <body class="page1">
-        <div class="header">
-            <div class="layout-center-wrapper">
-                <ul class="top-menu">
-                    <li class="main"><a class="active" href="#">Главная</a></li>
-                    <li><a href="#info">Информация</a></li>
-                    <li><a href="#news">Новости</a></li>
-                    <li><a href="price.html">Прайс-лист</a></li>
-                    <li><a href="katalog.html">Магазин</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                </ul>
-                <div class="account-menu">
-                        <a class="account-menu-enter" href="#">Вход</a>
+        <header>
+            <nav class="layout-center-wrapper navbar navbar-custom">
+                <div class="container-fluid">
+                        <div class="navbar-header">    
+                            <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>  
+                        <div class="collapse navbar-collapse" id="navbar-collapse" >                        
+                        <ul class="navbar-left nav navbar-nav">
+
+                            <li class="hidden" ><a href="#page-top"></a></li>
+                            <li><a class="active " href="index.html">Главная</a></li>
+                            <li><a href="#info">Информация</a></li>
+                            <li><a href="#news">Новости</a></li>
+                            <li><a href="price.html">Прайс-лист</a></li>
+                            <li><a href="katalog.html">Магазин</a></li>
+                            <li><a href="#contact">Контакты</a></li>
+                        </ul>
+                        <ul class="navbar-right nav navbar-nav">
+                            <li class="account-menu"><a class="account-menu-enter" href="#"><i class="glyphicon glyphicon-log-in"></i> Вход</a></li>
+                        </ul>
+                        </div>
                 </div>
-            </div>
-        </div>
-        <div class="layout-center-wrapper content">
-            <div class="logo"><a href="#"><img src="img/index-logo.png" alt="logo"></a></div>
+            </nav>
+        </header>
+        <main class="layout-center-wrapper content">
+            <div class="container-centered"><a href="#"><img  class="logo" src="img/index-logo.png" alt="logo"></a></div>
             <ul class="features" id="info">
                 <li>
                     <div class="feature-title">Быстро</div>
@@ -54,8 +68,8 @@
                 </li>
             </ul>
 
-            <div class="index-section">
-                <div class="index-left-column" id="news">
+            <section class="index-section">
+                <article class="index-left-column" id="news">
                     <div class="index-section-title">Новости</div>
                     <ul class="index-news">
                         <li>
@@ -68,8 +82,8 @@
                         </li>
                     </ul>
                     <a href="#" class="btn">Все новости</a>
-                </div>
-                <div class="index-right-column" id="gallery">
+                </article>
+                <article class="index-right-column" id="gallery">
                     <div class="index-section-title">Фотогалерея</div>
                     <div class="gallery">
                         <div class="gallery-items">
@@ -82,11 +96,11 @@
                             <button class="btn btn-next">Вперед</button>
                         </div>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
 
-            <div class="index-section">
-                <div class="index-left-column" id="informarion">
+            <section class="index-section">
+                <article class="index-left-column" id="informarion">
                     <div class="index-section-title">Контактная информация</div>
                     <div class="contacts-address">
                         <p>Barbershop «Borodinski»</p>
@@ -98,42 +112,43 @@
                     </div>
                     <button class="btn">Как проехать</button>
                     <button class="btn">Обратная связь</button>
-                </div>
-                <div class="index-right-column" id="contact" >
+                </article>
+                <article class="index-right-column" id="contact" >
                     <div class="index-section-title">Записаться</div>
                     <div class="contact-label"> УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</div>
                     <form action="#" method="post" id="orderForm">
                         <fieldset>
-                            <input class="contact" type="text" name="date" placeholder="Дата"> 
-                            <input class="contact" type="text" name="time" placeholder="Время">
+                            <input class="contact" type="date" name="date" placeholder="Дата"> 
+                            <input class="contact" type="time" name="time" placeholder="Время">
                         </fieldset>
                         <fieldset>
-                            <input class="contact" type="text" name="name" placeholder="Ваше имя"> 
-                            <input class="contact" type="text" name="phone" placeholder="Телефон">
+                            <input class="contact" type="name" name="name" placeholder="Ваше имя"> 
+                            <input class="contact" type="tel" name="phone" placeholder="Телефон">
                         </fieldset>
                         <fieldset>
-                            <input type="submit" class="btn" value="Отправить">
+                            <button type="submit" class="btn">Отправить </button>
                         </fieldset>
                     </form>
-                </div>
-            </div>
-        </div>
-        <div class="footer">
-            <div class="layout-center-wrapper">
-                <div class="contacts-address">
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section class="layout-center-wrapper">
+                <section class="contacts-address">
                     <strong>Barbershop «Borodinski»</strong>
                     <p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
                     <p>Телефон: +7 (495) 666-02-666</p>
-                </div>
-                <div class="social-buttons">
+                </section>
+                <section class="social-buttons">
                     <span>Давайте дружить!</span>
                     <a href="http://vk.com" class="btn-social btn-social-vk"><img src="img/vk-ic.png"></a>
                     <a href="http://facebook.com" class="btn-social btn-social-fb"><img src="img/fb-ic.png"></a>
                     <a href="http://instagram.com" class="btn-social btn-social-inst"><img src="img/ins-ic.png"></a>
-                </div>
-                <div class="copyright"> <span class="design">Дизайн сайта:</span>
-                  <a class="btn glukhanko" href="http://glukhanko.ru/">glukhanko.ru</a></div>
-            </div>
-        </div>
+                </section>
+                <section class="copyright"> <span class="design">Дизайн сайта:</span>
+                  <a class="btn glukhanko" href="http://glukhanko.ru/">glukhanko.ru</a>
+                </section>
+            </section>
+        </footer>
     </body>
 </html>

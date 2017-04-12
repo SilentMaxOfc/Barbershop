@@ -1,57 +1,79 @@
 /*Общее */
-/*Header*/
-html, body{
+/*header*/
+
+html, body {
     padding:0;
     margin:0;
     font-family:'PT Sans Narrow', sans-serif;
     font-weight:bold;
     text-transform:uppercase;
+    font-size:14px;
 }
-
-.header{
+.hidden {
+    display: none;
+}
+header{
     padding:0;
-    background:;
+    background:black;
+    height:5em;
 }
-.header .layout-center-wrapper{
-    height:4.5em;
-    background:black;    
+header .layout-center-wrapper{
+    height:5em;  
  }
-.top-menu {
-    float:left;
-    margin:0;
-    padding:0;
-    min-height:4.5em;
-    list-style:none;
+.navbar-left {
+    width: 90%;
 }
-.header li {
-    float:left;  
+@media (max-width: 767px)  {
+    .navbar-left {
+    width: 110%;
 }
-.header a {
-    display:block;
-    font-size:1em;
+}
+.navbar-custom li { 
+    height: 5em;
+    background-color: black;
+    z-index: 100;
+
+}
+@media (max-width: 767px)  {
+    .navbar-custom li { 
+       text-align: right;
+    }
+}
+.navbar-custom a {
+    font-size:1.25em;
     text-decoration:none;
     color:white;
-    line-height:4em;
-    vertical-allign:middle;
-    margin:0px 20px;
+    min-height:4em;
+
 }
-.header li:hover {
+.navbar-custom a:hover,
+.navbar-custom a:focus,
+.navbar-custom a:active{
+    color: white;
+    text-decoration: none;
+    background-color:#242424 !important; 
+}
+.navbar-custom li:hover {
     background-color:#242424;
 }
 .active {
     box-shadow:inset 0 -5px 0 0px white;
 }
-.account-menu a{
-    float:right;
-    padding:0 20px;
-    padding-left:35px;
-    position:relative;
-    opacity:0.3;
+.account-menu {
+    min-width: 100%;
 }
-.account-menu a:hover {
-    background-color:#242424;
+.account-menu-enter{
+    opacity:0.3;
+    margin-top:-3%;
+}
+.account-menu:hover a{
     opacity:1;
 }
+.account-menu i{ 
+    margin-top: 1%;
+    margin-right: 15px;
+}
+/*
 .account-menu a:before {
     content:'';
     position:absolute;
@@ -61,9 +83,19 @@ html, body{
     top:27px;
     background-image:url("img/enter-ic-active.png");
     
+} */
+.btn-navbar {
+    float:right;
+    min-height: 70%;
+    vertical-align: center;
+    border: 2px solid white;
+    border-radius: 10%;
 }
-/*Body */
 
+.btn-navbar i {
+        font-size: 1.5em;
+}
+/*body */
 .layout-center-wrapper{
     width:75%;
     min-height:50px;
@@ -72,7 +104,8 @@ html, body{
 }
 @media (max-width: 767px) {
     .layout-center-wrapper{
-        width:100%;}
+        width:100%;
+    }
 }
 .content {
     padding-top:1px; 
@@ -88,6 +121,7 @@ html, body{
     text-align: center;
     padding:15px 10%;
     white-space:nowrap;
+    margin-bottom: 3%;
     }
 .btn:hover {
     background:#663d15;
@@ -116,19 +150,21 @@ html, body{
     padding-left: 23px;
     background:url("img/black-romb-ic.png") no-repeat 0 4px;
 }
+
+
 /*Footer*/
-.footer{
+footer{
     margin-top:3%;
     padding:0;
     background:url("img/footer-bg.png");
-    min-height:189px;
+    min-height:100%;
 }
-.footer .layout-center-wrapper:after {
+footer .layout-center-wrapper:after {
   content:'';
   display:table;
   clear:both;
 }
-.footer .contacts-address, .social-buttons, .copyright {
+footer .contacts-address, .social-buttons, .copyright {
     float:left;
     width: 30%;
     min-height:100%;
@@ -137,42 +173,41 @@ html, body{
     padding-top:1%;
 }
 @media (max-width: 767px) {
-    .footer .contacts-address, .social-buttons, .copyright{
-        width:100%;
+    footer .contacts-address, .social-buttons, .copyright{
+        width:98%;
         float: none;
         text-align: center !important;
     }
 }
 
-.footer .copyright {
+footer .copyright {
     float:right;
     text-align:right;
 }
 
 .social-buttons {
     text-align:center;
+    margin-bottom: 0;
 }
-.footer span {
+footer span {
     margin-bottom:10px;
     display:block;
 }
-.footer .design {
-    margin-bottom:25px;
-    margin-right:25px;
+footer .design {
+    margin-bottom:2%;
+
 }
-.copyright .glukhanko {
-  margin:0;
-}
-.footer .glukhanko   {
+footer .glukhanko   {
     padding:15px 35px;
     min-width:140px;
+    margin: 0 !important;
 }
-.footer .btn:hover {
+footer .btn:hover {
     background:white;
     color:black !important;
 }
 
-/*НАчало первой страницы (главная)*/
+/*Нaчало первой страницы (главная)*/
 
 .page1 {
     background:url("img/bg.jpg");
@@ -181,23 +216,22 @@ html, body{
     
     margin-right:20px;
 }
-.main .active ~ .footer {
-box-shadow: none;
+.container-centered {
+    text-align: center; 
 }
+
 .logo{
     width:34%;
     min-height:204px;
-    margin:5% auto 5%;
-    text-align: center;
+    margin:5% 0;
 }
 @media (max-width: 767px) { 
     .logo{
-        width:100%;
-        margin:0;
+        width:90%;        
     }
-
+}
 .features{
-    margin:5% auto;
+    margin:0 auto 10%;
     padding:0;
     list-style:none;
 }
@@ -208,14 +242,18 @@ box-shadow: none;
 }
 .features li{
     float:left;
-    width:30%;
+    width:25%;
     min-height:50px;
-    margin:0 1.7%;
+    margin:0 4%;
     text-align:center;
+}
+.features img {
+    margin-bottom: 10%;
+    margin-top: 2%;
 }
 @media (max-width: 767px) { 
     .features li{
-        width:100%;
+        width:90%;
     }
 }
     
@@ -223,15 +261,14 @@ box-shadow: none;
     margin-right:0;
 }
 .feature-title {
-    font-size:30px;
+    font-size:2em;
     color:white;
-    line-height:42px;
-    padding-bottom:10px;
+    line-height:2.5em;
 }
 .features p {
-    font-size:14px;
+    font-size:1em;
     color:white;
-    line-height:24px;
+    line-height:2em;
 }
 .index-section{
     margin:3% 1%;
@@ -253,17 +290,11 @@ box-shadow: none;
     font-weight: bold;
  }
 @media (max-width: 767px) {
-    .index-left-column{
+    .index-left-column, .index-right-column{
         width:100%;
-        float: left;
-        margin: 5%;
-    }
-}
-@media (max-width: 767px) {
-    .index-right-column{
-        width:100%;
-        float: left;
-        margin: 5% -5%;
+        float: left !important;
+        padding-left: 5%;
+        
     }
 }
 .index-news {
@@ -274,7 +305,8 @@ box-shadow: none;
 }
 @media (max-width: 767px) {
     #news, #gallery, #informarion, #contact {
-        width:100%;
+        width:95%;
+        margin:0;
     }
 }
 
@@ -297,7 +329,7 @@ box-shadow: none;
     margin-bottom:0.5em;
 }
 .index-section a {
-    font-size:14px;
+    font-size:1em;
     color:black;
     text-decoration:none;
     line-height:2em;
@@ -321,6 +353,16 @@ box-shadow: none;
 .gallery-item {
     margin-bottom:17%;
 }
+
+.gallery-item img {
+    width: 65%;
+}
+@media (max-width:767px) {
+    .gallery-item img {
+    width: 90%;
+}
+}
+
 .gallery-item:nth-child(2), .gallery-item:nth-child(3) {
     display:none;
 }
@@ -345,8 +387,8 @@ fieldset {
     margin-left:0;
     padding-left:0;
 }
-input[type="submit"] {
-    width:82%;
+button[type="submit"] {
+    width:76%;
     }
 .contact-label {
     width:79%;
@@ -354,16 +396,17 @@ input[type="submit"] {
 }
 .contact {
     width:35%;
-    height:3em;
+    height:3.5em;
     background:url("img/index-section-bg.png");
     margin-right:5%;
+    margin-bottom:4%;
     color: black;
     border-color:black;
     padding-left:10px;
     font-family:PT Sans Narrow, sans-serif;
-    font-size:0.9em;
+    font-size:1em;
     text-transform:uppercase;
-    line-height:1.5em;
+    line-height:2em;
     display:inline-block;
     font-weight: bold;
 }
