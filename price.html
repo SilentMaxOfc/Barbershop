@@ -1,47 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
-        <title>Barbershop Price</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <base dir="M:/Documents/chopyak/barbershop">
-        <link rel="stylesheet" type="text/css" href="index-style.css">
-        <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic,latin" rel="stylesheet" type="text/css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Barbershop Borodinsky Price List">
+    <meta name="name" content="Max Chopiak">
+    
+    <title>Barbershop Borodinsky</title>
+    <link href="img/mustache.png" rel="icon" type="image/png" sizes="32x32">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="index-style.css">
+        
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body class="page2">
-        <div class="header">
-            <div class="layout-center-wrapper">
-                <ul class="top-menu">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a class="active" href="#">Прайс-лист</a></li>
-                    <li><a href="katalog.html">Магазин</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-                <div class="account-menu">
-                    <a class="account-menu-enter" href="#">Вход</a>
+        <header>
+            <nav class="layout-center-wrapper navbar navbar-custom">
+                <div class="container-fluid">
+                        <div class="navbar-header">    
+                            <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>  
+                        <div class="collapse navbar-collapse" id="navbar-collapse" >                        
+                        <ul class="navbar-left nav navbar-nav">
+
+                            <li class="hidden" ><a href="#page-top"></a></li>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="index.html">Информация</a></li>
+                            <li><a href="index.html">Новости</a></li>
+                            <li><a class="active" href="price.html">Прайс-лист</a></li>
+                            <li><a href="katalog.html">Магазин</a></li>
+                            <li><a href="index.html">Контакты</a></li>
+                        </ul>
+                        <ul class="navbar-right nav navbar-nav">
+                            <li class="account-menu"><a class="account-menu-enter" href="#"><i class="glyphicon glyphicon-log-in"></i> Вход</a></li>
+                        </ul>
+                        </div>
                 </div>
-            </div>
-        </div>
-        <div class="content layout-center-wrapper">
-            <div class="navigator-title-section">
+            </nav>
+        </header>
+        <main class="content layout-center-wrapper">
+            <section class="navigator-title-section">
                 <h1 class="navigator-title">Barbershop Borodinski - Прайс-лист</h1>
-                <div class="navigation"><a href="#">Главная</a> <span class="romb">Прайс-лист</span></div>
-            </div>
+                <div class="navigation"><a href="index.html">Главная</a> <span class="romb">Прайс-лист</span></div>
+            </section>
             <div class="wrapper-sticker"><div class="main-price-title">Истинно мужская классика</div></div>
-            <div class="price-section">
-                <div class="price-left-column">
-                    <div class="price-section-title">
+            <section class="price-section">
+                <article class="price-left-column">
+                    <h2 class="price-section-title">
                     МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:
-                    </div>
+                    </h2>
                     <ul class="price-brands">
                             <li>BAXTER OF CALIFORNIA</li>
                             <li>MR NATTY</li>
                             <li>SUAVECITO</li>
                             <li>MALIN+GOETZ</li>
                     </ul>
-                </div>
+                </article>
                 <div class="price-right-column">
                     <div class="price-section-title">
                     ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:
@@ -70,24 +94,25 @@
                 <div class="price-right-column">
                     <p>НАША МАСТЕРСКАЯ РАСПОЛОЖЕНА В ЦЕНТРЕ ГОРОДА, ПОЭТОМУ СДЕЛАТЬ СТИЛЬНУЮ СТРИЖКУ МОЖНО В ЛЮБОЕ ВРЕМЯ, ДАЖЕ В ОБЕДЕННЫЙ ПЕРЕРЫВ, ЗДЕСЬ ВЫ МОЖЕТЕ ПОГРУЗИТСЯ В УДОБНУЮ ДЛЯ ВАС АТМОСФЕРУ, ЧУВСТВОВАТЬ СЕБЯ КОМФОРТНО И СВОБОДНО!</p>
                 </div>
-            </div>
-        </div>
-        <div class="footer">
-           <div class="layout-center-wrapper">
-                <div class="contacts-address">
+            </section>
+        </main>
+        <footer>
+            <section class="layout-center-wrapper">
+                <section class="contacts-address">
                     <strong>Barbershop «Borodinski»</strong>
                     <p>Адрес: г. Москва, ул. Собаки Павлова, д. 13</p>
                     <p>Телефон: +7 (495) 666-02-666</p>
-                </div>
-                <div class="social-buttons">
+                </section>
+                <section class="social-buttons">
                     <span>Давайте дружить!</span>
                     <a href="http://vk.com" class="btn-social btn-social-vk"><img src="img/vk-ic.png"></a>
                     <a href="http://facebook.com" class="btn-social btn-social-fb"><img src="img/fb-ic.png"></a>
                     <a href="http://instagram.com" class="btn-social btn-social-inst"><img src="img/ins-ic.png"></a>
-                </div>
-                <div class="copyright"> <span class="design">Дизайн сайта:</span>
-                  <a class="btn glukhanko" href="http://glukhanko.ru/">glukhanko.ru</a></div>
-            </div>
-        </div>
+                </section>
+                <section class="copyright"> <span class="design">Дизайн сайта:</span>
+                  <a class="btn glukhanko" href="http://glukhanko.ru/">glukhanko.ru</a>
+                </section>
+            </section>
+        </footer>
     </body>
 </html>
